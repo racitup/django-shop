@@ -46,6 +46,7 @@ djangoShopModule.controller('DialogController',
 				scope.checkout_summary = response.checkout_summary;
 			}
 			$rootScope.checkout_summary = response.checkout_summary;
+			$rootScope.data = response.data;
 		}).error(function(errors) {
 			console.error("Unable to upload checkout forms:");
 			console.log(errors);
